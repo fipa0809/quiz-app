@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Quiz App</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Bubble Milk Tea Quiz App">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<div class="container">
+		<img src="https://www.centreeatondemontreal.com/media/stores/logos/BubbleTease-the-tea-smoothie-logo.svg">
+
+		<div class="quiz-content">
+
+			<form class="welcome-page-form">
+				<div class="welcome-page" style="display: none;">
+					<h1>Quiz App</h1>
+					<strong>Let's see how much you know about <u>bubble milk tea</u>! You will be answering 10 questions, each with 4 multiple choice answers to choose from. No skipping questions allowed and you will not be able to change answer after it's been submitted. Give it a try and good luck!</strong><br>
+					<button type="submit" class="start-button">start</button>
+				</div>
+			</form>
+
+			<div class="QA-page" style="display: none;">
+				<span class="question-count"> : </span>
+		        <form class="submit-answer">
+		          <div class="quiz-question"></div>
+		          <ul class="choices"></ul>
+		          <button type="submit">Submit Answer</button>
+		        </form>
+ 			</div>
+
+ 			<div class="feedback-page" style="display: none;">
+        <form class='feedback-form'>
+          <div class="feedback-header"></div>
+          <p class="feedback-text"></p>
+          <button type="text" class="next"></button>
+        </form>
+ 			</div>
+
+			
+			<div class="final-feedback-page" style="display: none;">
+				<h1>Here are your results!</h1>
+				<p class="quiz-results"></p>
+				<button class="reset-quiz">Try again</button>
+			</div>
+		</div>
+
+	</div>
+
+	<script
+  src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
